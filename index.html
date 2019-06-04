@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="css\style.css" type="text/css"/>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
     <header class="main-head">
+      <a href="main.html"><p class="visually-hidden">Главная страница сайта техномарт</p><img src="img/index-logo.svg" width="#" height="#" alt="Логотип магазина техномарт"></a>
+
+      <span class="search"><p class="visually-hidden">Строка поиска</p>
+        <p>Поиск:</p>
+        <input type="text" name="search">
+      </span>
+
 
       <nav class="main-nav">
-        <a href="main.html"><img src="img/index-logo.svg" width="#" height="#" alt="Логотип магазина техномарт"></a>
         <ul class="user-nav">
-          <li><a class="favourites-link">Закладки:0</a></li>
-          <li><a class="basket-link">Корзина:0</a></li>
-          <li><a class="order-link">Оформить заказ</a></li>
+          <li><a href="##" class="favourites-link">Закладки:0</a></li>
+          <li><a href="##" class="basket-link">Корзина:0</a></li>
+          <li><a href="##" class="order-link">Оформить заказ</a></li>
         </ul>
           <ul>
-            <li><a class="login-link">Войти</a></li>
-          <li><a class="registration-link">Регистрация</a></li>
+            <li><a href="##" class="login-link">Войти</a></li>
+          <li><a href="##" class="registration-link">Регистрация</a></li>
         </ul>
 
         <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
         <section class="contact-info">
-          <p class="phone">+7(812)555-05-55</p>
+          <p class="phone"><p class="visually-hidden">Наш номер телефона</p>+7(812)555-05-55</p>
           <p class="addr">г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8</p>
         </section>
 
@@ -43,12 +50,14 @@
 
 
       <section class="about">
+        <span class="visually-hidden">О компании</span>
         <h2 class="head-about">КОМПАНИЯ "ТЕХНОМАРТ"</h2>
         <p>Настоящий мужской шопинг начинается здесь!Огромный выбор товаров для ремонта и<br>
           строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
           <p>Техномарт работает со многими транспортными компаниями:</p>
-          <ul class="Deliv-compains">
+          <ul class="Deliv-compains">  <p class="visually-hidden">Способы доставки</p>
+
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
@@ -60,6 +69,22 @@
              заехав в наш офис:</p>
              <div><!-- Здесь будет карта --></div>
              <a class="button" href="#">ЗАБЛУДИЛИСЬ?НАПИШИТЕ НАМ!</a>
+             <div class="Letter-form">
+
+               <button type="button" name="Закрыть"><p class="visually-hidden">Закрыть окно</p>
+<img src="img/svg-technomart/icon-close.svg"></button>
+
+              <span> <p>Ваше имя:<br></p>
+              <input type="text" name="Name" placeholder="Имя Фамилия">
+              </span>
+              <span> <p>Ваш e-mail:<br></p>
+                <input type="text" name="mail" placeholder="email@example.com">
+              </span>
+              <span><p>Текст Письма:<br></p>
+              <input type="text" name="Letter" placeholder="В свободной форме">
+            </span>
+               <button type="button" name="Отправить">Отправить</button>
+             </div>
            </section>
 
           </main>
@@ -68,6 +93,8 @@
 
             <a href="main.html"><img src="img/index-logo.svg" width="#" height="#" alt="Логотип магазина техномарт"></a>
             <section class="contact-info">
+              <p class="visually-hidden">Контактная информация</p>
+
               <p class="addr">г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8</p>
               <p class="phone">+7(812)555-05-55</p>
             </section>
@@ -93,6 +120,8 @@
           </div>
 
           <div class="social">
+            <p class="visually-hidden">Наши страницы в социальных сетях</p>
+
             <a class="social-button" href="#">Вконтакте</a>
             <a class="social-button" href="#">Фейсбук</a>
             <a class="social-button" href="#">Инстаграм</a>

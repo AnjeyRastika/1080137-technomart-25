@@ -5,21 +5,24 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <header class="main-head">
+    <a href="main.html"><p class="visually-hidden">Перейти на главную страницу</p><img src="img/index-logo.svg" width="#" height="#" alt="Логотип магазина техномарт"></a>
+
 
     <nav class="main-nav">
-      <a href="main.html"><img src="img/index-logo.svg" width="#" height="#" alt="Логотип магазина техномарт"></a>
       <ul class="user-nav">
         <li><a class="favourites-link">Закладки:0</a></li>
         <li><a class="basket-link">Корзина:10</a></li>
         <li><a class="order-link">Оформить заказ</a></li>
       </ul>
       <ul>
+        <input type="text" name="login" placeholder="Равшан Джамшутович">
         <li><a class="login-link">Войти</a></li>
         <li><a class="registration-link">Регистрация</a></li>
       </ul>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 
       <section class="contact-info">
+        <p class="visually-hidden">Контактная информация</p>
         <p class="phone">+7(812)555-05-55</p>
         <p class="addr">г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8</p>
       </section>
@@ -49,16 +52,23 @@
       <h2>ПЕРФОРАТОРЫ</h2>
       <h3>ПРОИЗВОДИТЕЛИ:</h3>
       <ul>
-        <li>BOSCH</li>
-        <li>Интерскол</li>
-        <li>MAKITA</li>
-        <li>DEWALT</li>
-        <li>HITACHI</li>
+        <li><input type="checkbox" name="BOSCH" id="filter-BOSCH">
+        <label for="filter-BOSCH"></label>BOSCH</li>
+        <li><input type="checkbox" name="ИНТЕРСКОЛ" id="filter-ИНТЕРСКОЛ">
+        <label for="filter-ИНТЕРСКОЛ"></label>ИНТЕРСКОЛ</li>
+        <li><input type="checkbox" name="MAKITA" id="filter-MAKITA">
+        <label for="filter-MAKITA"></label>MAKITA</li>
+        <li><input type="checkbox" name="DEWALT" id="filter-DEWALT">
+        <label for="filter-DEWALT"></label>DEWALT</li>
+        <li><input type="checkbox" name="HITACHI" id="filter-HITACHI">
+        <label for="filter-HITACHI"></label>HITACHI</li>
         </ul>
         <h3>ПИТАНИЕ:</h3>
         <ul>
-          <li>АККУМУЛЯТОРНЫЕ</li>
-          <li>СЕТЕВЫЕ</li>
+          <li><input type="radio" name="Feed" value="ACC" id="filter-АККУМУЛЯТОРНЫЕ">
+            <label for="filter-АККУМУЛЯТОРНЫЕ"></label>АККУМУЛЯТОРНЫЕ</li>
+          <li><input type="radio" name="Feed" value="NOACC" id="filter-СЕТЕВЫЕ">
+            <label for="filter-СЕТЕВЫЕ">СЕТЕВЫЕ</li>
         </ul>
         <button>ПОКАЗАТЬ</button>
 </section>
@@ -84,11 +94,21 @@
     <p>  12500 Р. </p> </li>
   </ul>
 </section>
+<div class="Shop-block">
+  <button type="button" name="Закрыть"><img src="img/svg-technomart/icon-close.svg"></button>
+
+  <p>Товар добавлен в Корзину!</p>
+
+  <a href="#">Оформить заказ</a>
+  <button type="button" name="Продолжить покупки">Продолжить покупки</button>
+
+</div>
     </main>
   <footer>
 
     <a href="main.html"><img src="img/index-logo.svg" width="#" height="#" alt="Логотип магазина техномарт"></a>
     <section class="contact-info">
+      <p class="visually-hidden">Контактная информация</p>
       <p class="addr">г.Санкт-Петербург,ул.Б.Конюшенная,д. 19/8</p>
       <p class="phone">+7(812)555-05-55</p>
     </section>
@@ -114,6 +134,7 @@
   </div>
 
   <div class="social">
+    <p class="visually-hidden">Мы в социальных сетях</p>
     <a class="social-button" href="#">Вконтакте</a>
     <a class="social-button" href="#">Фейсбук</a>
     <a class="social-button" href="#">Инстаграм</a>
